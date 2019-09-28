@@ -1,0 +1,59 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
+.media_db{display: none;}.md-dis{display: block;}.mfnt_sz14{font-size: 14px;}
+.media_padding{padding: 2px;}.media_padding10{padding-left:10px;padding-right: 10px;}
+.height_120{height: 100px;}.mfnt_sz16{font-size:14px;}.fnt_sz15{font-size: 13px;}.fnt_sz12{font-size: 10px;}
+/*allpost.html*/
+.media_hgt{height: auto;}.mfnt_sz10{font-size: 8px;}
+/*allpost.html*/
+.media_hide3{display: none;}.media_change3{width:140px; height: 100px;}.media_hide6{display: none;}
+.media_fnt{font-size: 16px;}.media_fnt1{font-size: 12px;}.media_mb{margin-bottom: 40px;}
+.media_hght2{height: auto;}.media_marbt{margin-bottom: 10px;}.media_tp1{margin-top: 20px;}
+.media_hgt2{height: auto;}.media_font3{font-size: 14px;}.media_font4{font-size: 9px;}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+.media_db{display: none;}.md-dis{display: block;}.mfnt_sz14{font-size: 14px;}
+.media_padding10{padding-left:10px;padding-right: 10px;}.height_120{height: 120px;}
+/*allpost.html*/
+.media_hgt{height: 150px;}.mfnt_sz10{font-size: 10px;}
+/*allpost.html*/
+.media_hide{display: none;}.media_hide1{display: none;}.media_hide3{display: none;}.media_hgt2{height: 300px;}
+.change_marg{margin-top: 40px;}.margin_tp16{margin-top: 40px;}.margin_tp15{margin-top: 40px;}
+.media_change2{width:180px; height: 120px;}.media_fnt{font-size: 20px;}.media_mb{margin-bottom: 40px;}
+.media_fnt1{font-size: 15px;}.media_hght2{height: 200px;}.media_hide7{display: none;}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+.mfnt_sz14{font-size: 14px;}.mfnt_sz13{font-size: 13px;}.mfnt_sz16{font-size: 16px;}.mfnt_sz15{font-size: 15px;}
+.mfnt_sz20{font-size: 20px;}.mfnt_sz10{font-size: 10px;}.mfnt_sz11{font-size: 11px;}
+.img_size{width:80px; height:50px;}.height_120{height: 120px;}
+/*allpost.html*/
+.media_hgt{height: 150px;}
+/*allpost.html*/
+.media_change1{width:80px; height: 50px;}
+.media_hgt1{height:314px;}.media_hght{height:321px;}.media_hide{display: none;}.media_hide1{display: none;}
+.media_hide5{display: none;}.media_change2{width:140px; height: 110px;}.media_fnt{font-size: 18px;}
+.media_fnt1{font-size: 15px;}.media_hght2{height: 130px;}.media_change3{width:140px; height: 110px;}
+.media_hide6{display: none;}.media_font5{font-size: 18px;}.padd_md{padding: 0 10px 0 10px;}
+.media_font3{font-size: 12px;}.media_font4{font-size: 10px;}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+/*allpost.html*/
+.media_hgt{height: 200px;}
+/*allpost.html*/
+.media_hgt1{height:370px;}.media_hght{height:185px;}.media_pd{padding:10px 10px 10px 10px;}
+.media_hide{display: none;}.media_hide2{display: none;}.media_hgt2{height: 233px;}.media_hght2{height: 160px;}
+.media_change2{width:140px; height: 110px;}.media_hide4{display: none;}
+.media_font1{font-size: 21px;}.media_font2{font-size: 16px;}.media_font3{font-size: 13px;}
+.media_font4{font-size: 10px;}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) { 
+
+ }

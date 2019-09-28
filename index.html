@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Something</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<header class="container-fluid padding-0">
+		<div class="row margin-0">
+			<div class="col-12 padding-0 height-90 overflow-h  media_change">
+				<div class="card bg-dark text-white border_radnon">
+				  <div class="card-img border_radnon bg-dark height-90 media_change"></div>
+				  <div class="card-img-overlay padding-0 margin-0">
+				      <div class="container-fluid clr_trans padding-0 margin-0 height-35">
+				      	<div class="container">
+				      		<div class="row">
+					      		<div class="col-12">
+					      			<span class="username_d float-right mt-1 text-warning">
+					      				<i>Hi!</i> User
+					      			</span>
+					      			<span class="nav-link srch_hover clr_white cursour-pt float-right mr-5 fnt_sz13" data-toggle="modal" data-target="#signup">
+									SIGN UP</span>
+									<!--modal view-->
+									<div class="modal fade text-dark" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header pt-2 pb-2">
+									        <h5 class="modal-title w-100 text-center text-info" id="exampleModalLabel" style="padding-left: 40px;">Sign Up</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none;">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        <form>
+									          <div class="form-group">
+											    <input type="email" class="form-control" id="exampleInputusername" aria-describedby="usernameHelp" placeholder="Enter Username">
+											    <small id="usernameHelp" class="form-text text-danger">Username already exit.</small>
+											  </div>
+									          <div class="form-group">
+											    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+											    <small id="emailHelp" class="form-text text-danger">Email already exit.</small>
+											  </div>
+											  <div class="form-group">
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											  </div>
+											  <div class="form-group">
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+											    <small id="passHelp" class="form-text text-danger">Password you enter doesn't match.</small>
+											  </div>
+											  <div class="form-check mt-3 w-100 text-center fnt_sz14">
+											  	  <input type="checkbox" class="form-check-input">
+											      I accept your terms and conditions.
+											  </div>
+									        </form>
+									      </div>
+									      <div class="modal-footer padding-0 pt-2 pb-2 w-100 border_none justify-content-center">
+									        <button type="button" class="btn btn-primary">SIGN UP</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+									<span class="nav-link srch_hover clr_white cursour-pt float-right fnt_sz13" data-toggle="modal" data-target="#login">
+									LOGIN</span>
+									<!--modal view-->
+									<div class="modal fade text-dark" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header pt-2 pb-2">
+									        <h5 class="modal-title w-100 text-center text-info" id="exampleModalLabel" style="padding-left: 40px;">Login</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none;">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        <form>
+									           <div class="form-group">
+											    <label for="exampleInputEmail1">Email address</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+											    <small id="emailHelp" class="form-text text-danger">Email doesn't exit.</small>
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Password</label>
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											    <small id="passHelp" class="form-text text-danger">Password you enter is not correct.</small>
+											  </div>
+											  <div class="form-check">
+											    <label class="form-check-label  fnt_sz14">
+											      <input type="checkbox" class="form-check-input">
+											      Remember Me
+											    </label>
+											  </div>
+									        </form>
+									      </div>
+									      <div class="modal-footer border_none padding-0 pt-2 pb-2 w-100 justify-content-center">
+									        <button type="button" class="btn btn-primary">LOGIN</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+					      		</div>
+					      	</div>
+				      	</div>
+				      </div>
+
+				      <div class="container mt-2">
+				      	<div class="row align-items-center">
+				      		<div class="col-2 padding-0">
+				      			<a href="#"><img src="image/7topicslogo.png" height="35px" width="auto"></a>
+				      		</div>
+				      		<div class="col-10 padding-0">
+				      			<div class="row justify-content-end ">
+				      				<div  class="md-dis mr-4 pr-2 fnt_sz20 cursour-pt" onclick="openNav()"><span class="fa fa-navicon"></span></div>
+				      				<div id="mySidenav" class="sidenav">
+				      					<div class="container-fluid" style="height: 100vh;">
+				      						<div class="row">
+				      							<div class="col-10 padding-0 pt-4" style="height: 100vh; background-color: #262626;">
+				      							  <div class="row p-2 margin-0" style="margin-top: -22px;">
+				      							  	<div class="col-10 padding-0">
+				      							  		<input type="text" class="form-control border_none outline_none " placeholder="Search..." aria-label="Search for...">
+				      							  	</div>
+				      							  	<div class="col-2 padding-0">
+				      							  		<button type="submit" class="input-group-btn fa fa-search pt-2 pl-2 clr_white cursour-pt border_none" style="background-color:rgba(0,0,0,0); outline:none;">
+				      							  	</div>
+					      						  </div>
+												  <a href="home.html" class="clr_white mt-4 pl-3 acth">HOME</a>
+												  <a href="#" class="clr_white pl-3 acth">TUTORIALS</a>
+												  <a href="#" class="clr_white pl-3 acth">BLOGS</a>
+												  <a href="#" class="clr_white pl-3 acth">DESIGN</a>
+												  <a href="#" class="clr_white pl-3 acth">DOWNLOADS</a>
+				      							</div>
+				      							<div class="col-2 fnt_sz20" style="height: 100vh;background-color: #1a1a1a;">
+				      								<a href="javascript:void(0)" class="fa fa-navicon pt-3 clr_white" onclick="closeNav()"></a>
+				      							</div>
+				      						</div>
+				      					</div>
+									</div>
+
+				      				<div class="col-12 media_db">
+				      					<ul class="nav nav-pills justify-content-end fnt_sz15">
+										  <li class="nav-item">
+										    <a class="nav-link link_hover active fnt_sz14 p-1 pr-2 pl-2" href="home.html">HOME</a>
+										  </li>
+										  <li class="nav-item ml-2">
+										  	<a class="nav-link link_hover clr_white fnt_sz14 p-1 pr-2 pl-2" href="#">TUTORIALS</a>
+										  </li>
+										  <li class="nav-item ml-2">
+										  	<a class="nav-link link_hover clr_white fnt_sz14 p-1 pr-2 pl-2" href="#">BLOGS</a>
+										  </li>
+										  <li class="nav-item ml-2">
+										  	<a class="nav-link link_hover clr_white fnt_sz14 p-1 pr-2 pl-2" href="#">DESIGN</a>
+										  </li>
+										  <li class="nav-item ml-2">
+										  	<a class="nav-link link_hover clr_white fnt_sz14 p-1 pr-2 pl-2" href="#">DOWNLOADS</a>
+										  </li>
+										  <li class="nav-item">
+										    <span class="nav-link fa fa-search srch_hover clr_white cursour-pt" data-toggle="modal" data-target="#exampleModal">
+											</span>
+											<!-- Modal -->
+											<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											  <div class="modal-dialog" role="document">
+											    <div class="modal-content">
+											      <div class="modal-body">
+											        <div class="input-group border_1 rounded">
+												      <input type="text" class="form-control border_none outline_none placeholder-ch" placeholder="Type and Hit Enter To Search..." aria-label="Search for...">
+												      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 40px; height: 40px;margin-top: -3px;outline: none;">
+												          <span aria-hidden="true">&times;</span>
+												      </button>
+												    </div>
+											      </div>
+											    </div>
+											  </div>
+											</div>
+										  </li>
+										</ul>
+				      				</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--Breadcrumb-->
+	<div class="container mt-3">
+		<div class="row media_padding10">
+			<div class="col-12 padding-0">
+				<div class="padding-0 fnt_sz18"><span class="fa fa-tag text-danger"><a href="" class="text-secondary"  style="text-decoration: none;">&nbsp;&nbsp;<b>TECHNOLOGY</b></a></span> </div>
+			</div>
+		</div>
+	</div>
+
+	<section class="container padding-0 mt-3">
+		<div class="row media_padding10">
+			<!--content part-->
+			<div class="col-xs-12 col-md-8 ">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<figure class="figure">
+						  <img src="image/img1.jpg" class="figure-img img-fluid rounded card-img" alt="A generic square placeholder image with rounded corners in a figure.">
+						  <div class="card-img-overlay text-right padding-0 pr-4 pt-2 fnt_sz13">
+						    <span class="badge badge-danger fa fa-calendar-o pr-2 pb-2 pt-2 pl-2">&nbsp;&nbsp;<b>JULY 13 2017</b></span>
+						  </div>
+						  <figcaption class="figure-caption mt-3">
+						  	<span class="fa fa-folder-open">&nbsp;&nbsp;Business</span>
+						  	<span class="fa fa-dot-circle-o ml-2">&nbsp;&nbsp;Industry</span>
+						  	<span class="fa fa-user ml-5">&nbsp;&nbsp;Rohit Ranjan</span>
+						  </figcaption>
+						</figure>
+					</div>
+					<div class="col-12 mt-3">
+						<h1 class="text-dark">Top 7 tools for Automation and Better Photoshop</h1>
+					</div>
+					<div class="col-12 mt-4">
+						<h5 class="text-muted">After dabbling in various Bitcoin-related ventures that have gone south in the past couple of years, Cameron and Tyler Winklevoss are betting on themselves by heading up the first regulated Bitcoin exchange</h5>
+					</div>
+					<div class="col-12 mt-4">
+						<p class="article_text">The value of Bitcoin has passed the symbolic $500 mark for the first time in a month, suggesting that the cryptocurrency is stabilizing after a rollercoaster six months.</p>
+						<br/>
+						<p class="article_text">
+						With the first generation of Bitcoin businesses like Mt. Gox less influential today, the hopes of ‘mass-marketizing’ virtual currencies are held by venture capital-backed companies like BitPay, which recently raised $30 million, Coinbase, which raised a $25 million Series B round last year, and Circle. Interestingly, it looks like a significant transaction took the cyber currency over today’s landmark. That’s a reminder that though many people see the future of Bitcoin as leveling the playing field for all, there are</p>
+					</div>
+					<div class="col-12">
+						<figure class="figure">
+						  <img src="image/img2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						  <figcaption class="figure-caption text-right">
+						  	<i>Look at this image getting some caption love.</i>
+						  </figcaption>
+						</figure>
+					</div>
+					<div class="col-12 mt-3">
+						<p class="article_text">The value of Bitcoin has passed the symbolic $500 mark for the first time in a month, suggesting that the cryptocurrency is stabilizing after a rollercoaster six months.</p>
+						<br/>
+						<p class="article_text">
+						With the first generation of Bitcoin businesses like Mt. Gox less influential today, the hopes of ‘mass-marketizing’ virtual currencies are held by venture capital-backed companies like BitPay, which recently raised $30 million, Coinbase, which raised a $25 million Series B round last year, and Circle. Interestingly, it looks like a significant transaction took the cyber currency over today’s landmark. That’s a reminder that though many people see the future of Bitcoin as leveling the playing field for all, there are still individuals with vast amounts.</p>
+					</div>
+					<div class="col-12 mt-3">
+						<h4 class="text-dark">Photoshop</h4>
+					</div>
+					<div class="col-12 mt-2">
+						<p class="article_text">Donut cake carrot cake toffee tootsie roll halvah muffin tiramisu icing. Danish pie liquorice candy dessert soufflé. Pudding halvah jelly-o gingerbread sweet roll candy canes donut. I love topping lemon drops wafer chocolate candy chupa chups I love icing. Biscuit pudding brownie danish macaroon soufflé candy.</p>
+					</div>
+					<div class="col-12 mt-3">
+						<h4 class="text-dark">Paragraph Italics</h4>
+					</div>
+					<div class="col-12 mt-2">
+						<p class="article_text"><i>Donut cake carrot cake toffee tootsie roll halvah muffin tiramisu icing. Danish pie liquorice candy dessert soufflé. Pudding halvah jelly-o gingerbread sweet roll candy canes donut. I love topping lemon drops wafer chocolate candy chupa chups I love icing. Biscuit pudding brownie danish macaroon soufflé candy.</i></p>
+					</div>
+					<div class="col-12 mt-2">
+						<div class="blockquote article_text ml-3 mr-3 pr-4 pl-3" style="border-left:2px solid #2299ee;">
+						  <p class="mb-0">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
+						</div>
+					</div>
+					<div class="col-12 mt-5">
+						<div class="mt-4">
+							<span class="fa fa-external-link mr-3" style="font-size: 20px;"></span>
+							<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-danger padding-0 pr-2 pl-2">Primary</button></a>
+							<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-primary padding-0 pr-2 pl-2">Secondary</button></a>
+						</div>
+					</div>
+					<div class="col-11 mt-5 pl-2 pr-2">
+						<div class="card mt-4">
+						  <div class="media">
+							  <a href=""><img class="m-4 img-thumbnail bg-light" src="image/man-18.png" alt="Generic placeholder image"
+							  width="100px" height="auto"></a>
+							  <div class="media-body">
+							    <h5 class="mt-4 text-info mfnt_sz15">Author: <a href="" style="text-decoration: none;"><span class="text-info"><b class="text_clrhover">Rohit Ranjan</b></span></a></h5>
+							    <p class="text-muted mr-2 mfnt_sz14">Rijo loves to dig into WordPress, explore what’s possible and share his knowledge with readers. He also has deep interest in anything related to increasing productivity, writing better and being happy!</p>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mrt_100">
+						<div class="row">
+							<div class="w-100">
+							  <div><a href="" style="text-decoration: none;"><div class="col-6 float-left mfnt_sz14"><b><i class="fa fa-arrow-left"></i>&nbsp;Previous Post</b></div></a></div>
+							  <div><a href="" style="text-decoration: none;"><div class="col-6 text-right float-right mfnt_sz14"><b>Next Post &nbsp;<i class="fa fa-arrow-right"></i></b></div></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mt-5 mb-4">
+						<div class="row">
+							<div class="col-4 padding-0 pl-2 pr-2">
+								<a href="" style="text-decoration: none;"><div class="card border_radnon border_none">
+								  <img class="card-img-top border_radnon height_120" src="image/img3.jpg" alt="Card image cap" height="150px">
+								  <div class="card-body padding-0 pt-5 pl-1 pr-1">
+								    <h6 class="fnt_sz14 text-dark"><b>10 INCREDIBLE QUOTES TO GUIDE YOUR LIFE</b></h6>
+									<i class="fnt_sz14 text-muted">Web-design , Front-end</i>
+								  </div>
+								</div></a>
+							</div>
+							<div class="col-4 padding-0 pl-2 pr-2">
+								<a href="" style="text-decoration: none;"><div class="card border_radnon border_none">
+								  <img class="card-img-top border_radnon height_120" src="image/img4.jpg" alt="Card image cap" height="150px">
+								  <div class="card-body padding-0 pt-5 pl-1 pr-1">
+								    <h6 class="fnt_sz14 text-dark"><b>10 INCREDIBLE QUOTES TO GUIDE YOUR LIFE</b></h6>
+									<i class="fnt_sz14 text-muted">Web-design , Front-end</i>
+								  </div>
+								</div></a>
+							</div>
+							<div class="col-4 padding-0 pl-2 pr-2">
+								<a href="" style="text-decoration: none;"><div class="card border_radnon border_none">
+								  <img class="card-img-top border_radnon height_120" src="image/img5.jpg" alt="Card image cap" height="150px">
+								  <div class="card-body padding-0 pt-5 pl-1 pr-1">
+								    <h6 class="fnt_sz14 text-dark"><b>10 INCREDIBLE QUOTES TO GUIDE YOUR LIFE</b></h6>
+									<i class="fnt_sz14 text-muted">Web-design , Front-end</i>
+								  </div>
+								</div></a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<!--comment section-->
+				<div class="row mt-5">
+					<div class="col-12 mt-4 mb-4">
+						<h3 class="mb-4 mfnt_sz20">8 Comments</h3>
+						<form>
+						  <div class="form-group w-100">
+						    <textarea id="comment" class="form-control outline placeholder p-2 pl-3 fnt_sz22" name="comment" cols="45" rows="4" maxlength="65525" placeholder="Enter Your Comment..." aria-required="true" required></textarea>
+						  </div>
+
+						  <div class="form-row">
+						    <div class="form-group col-6">
+						      <p class="mb-4 w-100 fnt_sz22">Comment as a guest:</p>
+						      <input type="text" class="form-control outline" id="name" placeholder="Name">
+						      <input type="email" class="form-control outline mt-4" id="name" placeholder="Email">
+						      <input type="text" class="form-control outline mt-4" id="name" placeholder="Website">
+						    </div>
+						    <div class="col-1">
+						    	<div class="row align-items-center" style="height: 100%;">
+						    		<div class="col-12 text-right text-dark fnt_sz20 pt-4">
+						    			<i>or</i>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="col-4">
+						    	<div class="row align-items-center" style="height: 100%;">
+						    		<a href=""><div class="col-12 text-center text-primary fnt_sz18 pt-4 ml-3 mfnt_sz16">
+						    			<u><b>By Login To Website</b></u>
+						    		</div></a>
+						    	</div>
+						    </div>
+						  </div>
+
+						  <button type="submit" class="btn btn-outline-info pl-4 pr-4">Post Comment</button>
+						</form>
+					</div>
+				</div>
+				<!--Users comments-->
+				<div class="row mt-4 mb-5">
+					<div class="col-12">
+						<div class="w-100 fnt_sz22">
+							<span class="fa fa-comment">&nbsp;&nbsp;Comments</span>
+						</div>
+						<div class="card mt-5 p-3">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							    <div class="w-100">
+							  		<button type="button" class="btn btn-info float-right mt-3 mfnt_sz14">Reply</button>
+							 	 </div>
+							  </div>
+							</div>
+						</div>
+						<div class="card mt-4 p-3 ml-5" id="child_comment">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan <div class="badge ml-3 fnt_sz12 text-info">
+									  <i class="fnt_sz15 text-secondary font_wght100">replied to </i>@Rohit Ranjan</div>
+								</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							  </div>
+							</div>
+						</div>
+						<div class="card mt-4 p-3 ml-5" id="child_comment">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan <div class="badge ml-3 fnt_sz12 text-info">
+									  <i class="fnt_sz15 text-secondary font_wght100">replied to </i>@Rohit Ranjan</div>
+								</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							  </div>
+							</div>
+						</div>
+						<div class="card mt-4 p-3 ml-5" id="child_comment">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan <div class="badge ml-3 fnt_sz12 text-info">
+									  <i class="fnt_sz15 text-secondary font_wght100">replied to </i>@Rohit Ranjan</div>
+								</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							  </div>
+							</div>
+						</div>
+						<div class="card mt-5 p-3">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							    <div class="w-100">
+							  		<button type="button" class="btn btn-info float-right mt-3 mfnt_sz14">Reply</button>
+							 	 </div>
+							  </div>
+							</div>
+						</div>
+						<div class="card mt-5 p-3">
+							<div class="media">
+							  <img class="mr-3 img-thumbnail rounded-circle bg-light" src="image/man-18.png" alt="Generic placeholder image" width="60px">
+							  <div class="media-body mfnt_sz14">
+							    <h5 class="mt-0 mfnt_sz16">Rohit Ranjan</h5>
+							    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							    <div class="w-100">
+							  		<button type="button" class="btn btn-info float-right mt-3 mfnt_sz14">Reply</button>
+							 	 </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--sidebar part-->
+			<div class="col-xs-12 col-md-4 bg-light">
+				<div class="row justify-content-center">
+					<div class="col-10 border_1 padding-1 rounded mb-4 mt-2">
+						<div class="input-group ">
+					      <input type="text" class="form-control border_none outline_none" placeholder="Your Email Address" aria-label="Search for..." style="margin-left: 1px;">
+					      <button type="submit" class="input-group-btn fa fa-send p-1 rounded-right bg_white border_none outline_none text-danger cursour-pt" style="margin-right: 1px;">
+					      </button>
+					    </div>
+					</div>
+					<div class="col-8 col-sm-6 col-md-10 mb-3 mt-3 padding-0 ">
+						<p class="fnt_sz13 text-dark" style="font-weight: 600;">ADVERTISEMENT</p>
+						<a href=""><img src="image/img6.jpg" class="border_1" width="100%"></a>
+					</div>
+					<div class="col-8 col-sm-8 col-md-10 wt-4 mt-5 mb-4 padding-0">
+						<p class="fnt_sz20 text-dark mfnt_sz16" style="font-weight: 500;">CATEGORY</p>
+						<div class="bg-danger" style="width: 40px;height: 2px;"></div>
+						<div class="mt-4">
+							<span class="fa fa-chevron-right text-info"><a class="ml-2 text-secondary" href="">
+								<b>News</b></a></span>
+						</div>
+						<div class="mt-4">
+							<span class="fa fa-chevron-right text-primary"><a class="ml-2 text-secondary" href=""><b>Website Tips</b></a></span>
+						</div>
+						<div class="mt-4">
+							<span class="fa fa-chevron-right text-warning"><a class="ml-2 text-secondary" href=""><b>Growing Your Business</b></a></span>
+						</div>
+						<div class="mt-4">
+							<span class="fa fa-chevron-right text-danger"><a class="ml-2 text-secondary" href=""><b>Inspiration</b></a></span>
+						</div>
+						<div class="mt-4">
+							<span class="fa fa-chevron-right text-success"><a class="ml-2 text-secondary" href=""><b>Starting Your Business</b></a></span>
+						</div>
+					</div>
+					<div class="col-8 col-sm-6 col-md-10 mb-3 mt-3 padding-0 ">
+						<p class="fnt_sz13 text-dark" style="font-weight: 600;">ADVERTISEMENT</p>
+						<a href=""><img src="image/img7.jpg" class="border_1" width="100%"></a>
+					</div>
+					<div class="col-8 col-sm-8 col-md-10 wt-4 mt-5 mb-4 padding-0">
+						<p class="fnt_sz20 text-dark mfnt_sz16" style="font-weight: 500;">RECENT POSTS</p>
+						<div class="bg-danger" style="width: 40px;height: 2px;"></div>
+						<div class="mt-4 border_none">
+							<a href="" style="text-decoration: none;"><div class="media">
+							  <img class="mr-4 border_1 rounded img_size" src="image/img1.jpg" alt="Generic placeholder image" width ="110px" height="70px">
+							  <div class="media-body text-secondary mfnt_sz13">
+							    <h5 class="mt-0 fnt_sz18 text-dark mfnt_sz14">Tips For Designing a Business</h5>
+							    10th July 2014
+							  </div>
+							</div></a>
+						</div>
+						<div class="mt-4 border_none">
+							<a href="" style="text-decoration: none;"><div class="media">
+							  <img class="mr-4 border_1 rounded img_size" src="image/img4.jpg" alt="Generic placeholder image" width ="110px" height="70px">
+							  <div class="media-body text-secondary mfnt_sz13">
+							    <h5 class="mt-0 fnt_sz18 text-dark mfnt_sz14">Tips For Designing a Business</h5>
+							    10th July 2014
+							  </div>
+							</div></a>
+						</div>
+						<div class="mt-4 border_none">
+							<a href="" style="text-decoration: none;"><div class="media">
+							  <img class="mr-4 border_1 rounded img_size" src="image/img3.jpg" alt="Generic placeholder image" width ="110px" height="70px">
+							  <div class="media-body text-secondary mfnt_sz13">
+							    <h5 class="mt-0 fnt_sz18 text-dark mfnt_sz14">Tips For Designing a Business</h5>
+							    10th July 2014
+							  </div>
+							</div></a>
+						</div>
+						<div class="mt-4 border_none">
+							<a href="" style="text-decoration: none;"><div class="media">
+							  <img class="mr-4 border_1 rounded img_size" src="image/img2.jpg" alt="Generic placeholder image" width ="110px" height="70px">
+							  <div class="media-body text-secondary mfnt_sz13">
+							    <h5 class="mt-0 fnt_sz18 text-dark mfnt_sz14">Tips For Designing a Business</h5>
+							    10th July 2014
+							  </div>
+							</div></a>
+						</div>
+					</div>
+					<div class="col-8 col-sm-6 col-md-10 mb-3 mt-3 padding-0 ">
+						<p class="fnt_sz13 text-dark" style="font-weight: 600;">ADVERTISEMENT</p>
+						<a href=""><img src="image/img8.jpg" class="border_1" width="100%"></a>
+					</div>
+					<div class="col-8 col-sm-8 col-md-10 wt-4 mt-5 mb-4 padding-0">
+						<p class="fnt_sz20 text-dark mfnt_sz16" style="font-weight: 500;">TAGS</p>
+						<div class="bg-danger mb-3" style="width: 40px;height: 2px;"></div>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Ideas</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Interior</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Exterior</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Architecture</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Display</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Design</button></a>
+						<a href="" style="text-decoration: none;"><button type="button" class="btn btn-outline-info p-1 pr-2 pl-2 m-1 fnt_sz14">Psd</button></a>
+					</div>
+					<div class="col-6 col-sm-6 col-md-10 mb-3 mt-3 padding-0">
+						<p class="fnt_sz13 text-dark" style="font-weight: 600;">ADVERTISEMENT</p>
+						<a href=""><img src="image/img9.jpg" class="border_1" width="100%"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid bg-dark text-light mt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-8 col-lg-3 mt-5 mb-1">
+					<a href="" style="text-decoration:none;"><h2 class="mt-2 text-white">7topics</h2></a>
+					<p class="pt-4" style="line-height: 1.8;">Numero that can help you prototyping easy entire websites in Photoshop and Sketch.</p>
+
+					<div class="w-100 mt-5">
+					    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+						  <a href=""><div class="btn-group mr-1 fnt_sz13" role="group" aria-label="First group">
+						    <button type="button" class="btn btn-outline-primary fa fa-facebook"></button>
+						  </div></a>
+						  <a href=""><div class="btn-group mr-1 fnt_sz13" role="group" aria-label="Second group">
+						    <button type="button" class="btn btn-outline-info fa fa-twitter"></button>
+						  </div></a>
+						  <a href=""><div class="btn-group mr-1 fnt_sz13" role="group" aria-label="Second group">
+						    <button type="button" class="btn btn-outline-warning fa fa-instagram"></button>
+						  </div></a>
+						  <a href=""><div class="btn-group mr-1 fnt_sz13" role="group" aria-label="Second group">
+						    <button type="button" class="btn btn-outline-secondary fa fa-linkedin"></button>
+						  </div></a>
+						  <a href=""><div class="btn-group fnt_sz13" role="group" aria-label="Third group">
+						    <button type="button" class="btn btn-outline-danger fa fa-youtube"></button>
+						  </div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 mt-5 mb-1">
+					<div class="row fnt_sz14">
+						<div class="col-xs-12 col-sm-4 media_padding">
+							<div class="list-group ft_hover">
+							  <div class="list-group-item list-group-item-action bg-success clr_white">
+							    COMPANY
+							  </div>
+							  <a href="#" class="list-group-item list-group-item-action">About us</a>
+							  <a href="#" class="list-group-item list-group-item-action">Contact us</a>
+							  <a href="#" class="list-group-item list-group-item-action">Blog</a>
+							  <a href="#" class="list-group-item list-group-item-action">History</a>
+							  <a href="#" class="list-group-item list-group-item-action">Team</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 media_padding">
+							<div class="list-group ft_hover ">
+							  <div class="list-group-item list-group-item-action bg-danger clr_white">
+							    PRODUCTS
+							  </div>
+							  <a href="#" class="list-group-item list-group-item-action">Mobile Apps</a>
+							  <a href="#" class="list-group-item list-group-item-action">Web Design</a>
+							  <a href="#" class="list-group-item list-group-item-action">Navigation</a>
+							  <a href="#" class="list-group-item list-group-item-action">Branding</a>
+							  <a href="#" class="list-group-item list-group-item-action">Motion Design</a>
+							  <a href="#" class="list-group-item list-group-item-action">Icons</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 media_padding">
+							<div class="list-group ft_hover">
+							  <div href="#" class="list-group-item list-group-item-action bg-primary clr_white">
+							    SHOP
+							  </div>
+							  <a href="#" class="list-group-item list-group-item-action">Accessories</a>
+							  <a href="#" class="list-group-item list-group-item-action">Print</a>
+							  <a href="#" class="list-group-item list-group-item-action">Book</a>
+							  <a href="#" class="list-group-item list-group-item-action">Gifts</a>
+							  <a href="#" class="list-group-item list-group-item-action">Maps</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mt-5 mb-1">
+					<div class="w-100 mt-4 fnt_sz18">
+					    <b>SUBSCRIBE</b>
+					</div>
+					<div class="w-100 mt-4">
+					    Subscribe to our newsletter and get some freebies stuff every week.
+					</div>
+					<div class="w-100 mt-3">
+						<div class="input-group ">
+					      <input type="text" class="form-control border_none outline_none" placeholder="Your Email Address" aria-label="Search for...">
+					      <button type="submit" class="input-group-btn fa fa-send p-2 rounded-right bg_white border_none outline_none text-danger cursour-pt">
+					      </button>
+					    </div>
+					</div>
+				</div>
+
+				<div class="w-100 mb-3 pt-5 text-center">
+					© 2018 <a href="#" class="text-success">7topics</a> . All rights reserved
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "280px";
+		    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.body.style.backgroundColor = "white";
+		}
+	</script>
+</body>
+</html>
